@@ -17,7 +17,9 @@ const Dashboard = () => {
 
     return (
         <div className="dashboard">
-            <h1>Welcome to the UZ Internship Tracker</h1>
+           <i><h1>Welcome to the UZ Internship Tracker</h1></i> 
+           <hr></hr>
+           <hr></hr>
             <h2>Select Your Role</h2>
             {userRole === 'student' && (
                 <button onClick={() => handleRoleSelection('student')}>Student Portal</button>

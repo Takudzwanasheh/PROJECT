@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
+import africa from "./African_Lion_King.jpg";
+// import {db} from '../firebase';
 
 const StudentPortal = () => {
     const [selectedStudent, setSelectedStudent] = useState(null);
     const [workedHours, setWorkedHours] = useState('');
     const [previousHours, setPreviousHours] = useState([]);
     const [projects, setProjects] = useState([
-        { name: 'Project A', reviews: ['Excellent work!', 'Needs improvement.'] },
+        { name: 'Project A', reviews: ['Excellent work!', 'Needs improvement.,Very collavborative'] },
         { name: 'Project B', reviews: ['Great presentation!', 'Very informative.'] },
     ]);
     const [feedback, setFeedback] = useState('');
@@ -19,6 +21,7 @@ const StudentPortal = () => {
         { name: 'Pady', year: 'Fourth Year', major: 'Software Engineering Intern' },
         { name: 'Ngaiso T', year: 'Third Year', major: 'Hardware Student' },
         { name: 'Munashe', year: 'First Year', major: 'Social Behaviour Student' },
+       
     ];
 
     const handleSelectStudent = (student) => {
@@ -29,7 +32,7 @@ const StudentPortal = () => {
     const handleAddHours = () => {
         if (workedHours) {
             setPreviousHours((prevHours) => [...prevHours, workedHours]); // Append new hours to previous hours
-            setWorkedHours(''); // Clear the input field after adding
+            // setWorkedHours(''); // Clear the input field after adding
         }
     };
 
@@ -69,7 +72,7 @@ const StudentPortal = () => {
                 <h2>Student Profiles</h2>
                 {students.map((student, index) => (
                     <div key={index} className="student-profile" onClick={() => handleSelectStudent(student)}>
-                        <img src={`https://via.placeholder.com/100`} alt={`${student.name}`} />
+                        <img src={africa} title="student" alt={`${student.name}`} />
                         <h4>{student.name}</h4>
                         <p>{student.year}, {student.major}</p>
                     </div>

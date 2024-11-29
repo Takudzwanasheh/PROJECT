@@ -1,0 +1,15 @@
+# Normalize line endings for text files
+* text=auto
+
+# Specify file types explicitly if necessary
+*.js text
+*.d.ts text
+# Normalize line endings for text files
+* text=auto
+
+# Explicitly set line endings for specific file types
+*.js text
+*.json text
+*.html text
+*.yaml text
+*.gql text

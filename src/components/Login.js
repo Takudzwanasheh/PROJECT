@@ -19,9 +19,11 @@ const Login = () => {
             localStorage.setItem('userRole', 'employer');
             setSuccessMessage('Login successful! Welcome, Ngaiso!');
             navigate('/dashboard');
+            
+
         } else if (username === 'Munashe' && password === '2024') {
             localStorage.setItem('userRole', 'supervisor');
-            setSuccessMessage('Login successful! Welcome, Parker!');
+            setSuccessMessage('Login successful! Welcome, Munashe!');
             navigate('/dashboard');
         } else {
             alert('Invalid Username or Password');
@@ -52,6 +54,13 @@ const Login = () => {
                         required
                     />
                 </div>
+                <select id ='role'required>
+                    <option value="" disabled selected>Select your role</option>
+                    <option value="student">Student</option>
+                    <option value="supervisor">Supervisor</option>
+                    <option value="employer">Employer</option>
+                </select>
+                {/* <p>Don't have an account ? <a href="" onclick="location.href='register.js'"></a></p> */}
                 <button type="submit">Login</button>
             </form>
             {successMessage && <p className="success-message">{successMessage}</p>} {/* Display success message */}

@@ -28,6 +28,7 @@ const RoleSelection = () => {
             <button onClick={() => handleRoleSelection('employer')}>Employer</button>
         </div>
     );
+    
 };
 
 export default RoleSelection;
