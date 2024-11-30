@@ -1,0 +1,68 @@
+/* Welcome.css */
+
+#welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+    background-color: #f4f6f9; /* Light background for contrast */
+}
+
+.welcome-container {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Maximum width for content */
+    margin: auto; /* Centering */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: white; /* White background for content */
+}
+
+.welcome-text {
+    flex: 1; /* Take up available space */
+    padding: 20px;
+}
+
+.welcome-text h1 {
+    color: #0056b3; /* Primary color for heading */
+    font-size: 36px; /* Larger font size */
+}
+
+.welcome-text p {
+    font-size: 18px; /* Font size for paragraph */
+    margin: 20px 0; /* Spacing between elements */
+}
+
+.welcome-image {
+    flex: 1; /* Take up available space */
+    display: flex;
+    justify-content: center; /* Center the image */
+    align-items: center;
+}
+
+.welcome-image img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+/* Button Styling */
+button {
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    background-color: #007bff; 
+    color: white; 
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; 
+    transform: translateY(-2px); /* Lift effect on hover */
+}
