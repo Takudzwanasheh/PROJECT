@@ -6,11 +6,14 @@ body {
   background-color: #f4f6f9;
   color: #333;
 }
+<<<<<<< HEAD
 .App{
   min-height: 100vh;
   display: flex;
 flex-direction: column;
 }
+=======
+>>>>>>> cd3339c2502f1b4ce85ed8ddc86ba7f382710b86
 
 h1, h2, h3 {
   margin: 0;
@@ -42,6 +45,7 @@ header h1 {
 
 
 footer {
+<<<<<<< HEAD
   margin-top: auto;
   width: 100%;
   background-color: #333; 
@@ -57,6 +61,17 @@ footer {
   display: flex;
   gap: 30px;
 }
+=======
+  background-color: #333; 
+  color: white; 
+  text-align: center;
+  padding: 15px; 
+  position: relative; 
+  bottom: 0; 
+  width: 100%; 
+}
+
+>>>>>>> cd3339c2502f1b4ce85ed8ddc86ba7f382710b86
 
 button {
   padding: 10px 20px; 
@@ -95,7 +110,11 @@ button.primary:hover {
 input[type="text"],
 input[type="password"],
 select {
+<<<<<<< HEAD
   width: 50%; 
+=======
+  width: 100%; 
+>>>>>>> cd3339c2502f1b4ce85ed8ddc86ba7f382710b86
   padding: 12px; 
   border: 1px solid #ccc; 
   border-radius: 5px; 
@@ -116,9 +135,15 @@ select:focus {
       padding: 10px; 
   }
 
+<<<<<<< HEAD
   /* header, footer {
       padding: 15px; 
   } */
+=======
+  header, footer {
+      padding: 15px; 
+  }
+>>>>>>> cd3339c2502f1b4ce85ed8ddc86ba7f382710b86
 }
 .supervisor-portal {
   padding: 20px;
@@ -258,10 +283,17 @@ button:hover {
 }
 
 .student-profile img {
+<<<<<<< HEAD
   width: 50px; 
   height: 50px; 
   border-radius: 50%; 
   margin-right: 10px; 
+=======
+  width: 50px; /* Adjust size */
+  height: 50px; /* Adjust size */
+  border-radius: 50%; /* Circular shape */
+  margin-right: 10px; /* Space between image and text */
+>>>>>>> cd3339c2502f1b4ce85ed8ddc86ba7f382710b86
 }
 
 .content {
@@ -283,6 +315,7 @@ button:hover {
 
 h2, h3, h4 {
   margin: 10px 0;
+<<<<<<< HEAD
 }
 .login-container{
   text-align: center;
@@ -302,3 +335,6 @@ h2, h3, h4 {
   height: 120px;
 }
 
+=======
+}
+>>>>>>> cd3339c2502f1b4ce85ed8ddc86ba7f382710b86
